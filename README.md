@@ -4,20 +4,21 @@ A library of simple complex arithmetic, using a functional development style.
 
 ## create a complex number
 
-Create the complex number `(2+3i)` and `(-1-i):
+Create the complex number `(2+3i)` and `(-1-i)`:
 ```javascript
 const c1 = create(2)(3)
 const c2 = create(-1)(-1)
+const c3 = create(0.5) // shortcut, no imaginary part
 ```
 
 ## Adding two complex numbers:
 ```javascript
-const added = add(c1)(c2)
+const added = add(c1)(c2) // (1+2i)
 ```
 
 ## Subtracting two complex numbers:
 ```javascript
-const subbed = subtract(c1)(c2)
+const subbed = subtract(c1)(c2) // (3+4i)
 ```
 
 ## Multiplying two complex numbers:
