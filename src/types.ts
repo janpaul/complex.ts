@@ -1,4 +1,4 @@
 export interface ComplexType {
   real: number
-  imagenary: number
+  imaginary: number
 }

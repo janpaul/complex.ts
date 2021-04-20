@@ -1,4 +1,6 @@
-export { ComplexType } from './types'
-export { create } from './helpers'
 export { add } from './add'
+export { ComplexType } from './types'
+export { create } from './create'
 export { multiply } from './multiply'
+export { present } from './present'
+export { square } from './square'
