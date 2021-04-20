@@ -15,3 +15,6 @@ export const present = ({ real: r, imaginary: i }: ComplexType): string => {
 
 export const present_polar = ({ length, theta }: PolarType): string =>
   `${length}·(cos(${theta})+i·sin(${theta})`
+
+export const real = ({ real }: ComplexType): number => real
+export const imaginary = ({ imaginary }: ComplexType): number => imaginary

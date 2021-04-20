@@ -1,4 +1,11 @@
-import { present, present_polar, create, create_polar } from '..'
+import {
+  present,
+  present_polar,
+  create,
+  create_polar,
+  real,
+  imaginary,
+} from '..'
 
 describe('present', () => {
   describe('present', () => {
@@ -14,5 +21,10 @@ describe('present', () => {
   describe('present_polar', () => {
     test('presents a polar', () =>
       expect(present_polar(create_polar(1)(2))).toBe('1·(cos(2)+i·sin(2)'))
+  })
+  describe('real and imaginary parts', () => {
+    const c = create(2)(3)
+    test('real part', () => expect(real(c)).toBe(2))
+    test('imaginary part', () => expect(imaginary(c)).toBe(3))
   })
 })
