@@ -5,6 +5,8 @@ import {
   create_polar,
   real,
   imaginary,
+  is_real,
+  is_complex,
 } from '..'
 
 describe('present', () => {
@@ -26,5 +28,18 @@ describe('present', () => {
     const c = create(2)(3)
     test('real part', () => expect(real(c)).toBe(2))
     test('imaginary part', () => expect(imaginary(c)).toBe(3))
+  })
+  describe('is_real', () => {
+    test('(3+0i) is real', () => expect(is_real(create(3)(0))).toBeTruthy())
+    test('(3+i) is not real', () => expect(is_real(create(3)(1))).toBeFalsy())
+  })
+  describe('is_real', () => {
+    test('(3+0i) is real', () => expect(is_real(create(3)(0))).toBeTruthy())
+    test('(3+i) is not real', () => expect(is_real(create(3)(1))).toBeFalsy())
+  })
+  describe('is_complex', () => {
+    test('(3+0i) is real', () => expect(is_complex(create(3)(0))).toBeFalsy())
+    test('(3+i) is not real', () =>
+      expect(is_complex(create(3)(1))).toBeTruthy())
   })
 })

@@ -18,3 +18,6 @@ export const present_polar = ({ length, theta }: PolarType): string =>
 
 export const real = ({ real }: ComplexType): number => real
 export const imaginary = ({ imaginary }: ComplexType): number => imaginary
+export const is_real = ({ imaginary }: ComplexType): boolean => imaginary === 0
+export const is_complex = ({ imaginary }: ComplexType): boolean =>
+  imaginary !== 0
