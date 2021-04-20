@@ -1,6 +1,7 @@
 export { add } from './add'
 export { ComplexType } from './types'
 export { create, create_polar } from './create'
+export { flip } from './flip'
 export { length } from './length'
 export { multiply } from './multiply'
 export { present, present_polar } from './present'
