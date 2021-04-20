@@ -1,7 +1,6 @@
 import { ComplexType } from './types'
 
-export const present = (c: ComplexType): string => {
-  const { real: r, imaginary: i } = c
+export const present = ({ real: r, imaginary: i }: ComplexType): string => {
   if (r === 0 && i === 0) {
     return '0'
   }

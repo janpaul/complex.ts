@@ -1,6 +1,8 @@
 export { add } from './add'
 export { ComplexType } from './types'
 export { create } from './create'
+export { length } from './length'
 export { multiply } from './multiply'
 export { present } from './present'
 export { square } from './square'
+export { subtract } from './subtract'
